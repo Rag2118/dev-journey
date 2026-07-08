@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+
+                animation-name: moveBox;
+                animation-duration: 3s;
+            }
+            @keyframes moveBox{
+                0%{
+                    background: red;
+                    transform: translateX(0) scale(1);
+                }
+                50%{
+                    background: yellow;
+                    transform: translateX(125px) scale(1.5);
+                }
+                100%{
+                    background: blue;
+                    transform: translateX(250px) scale(1);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
