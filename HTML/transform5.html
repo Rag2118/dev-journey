@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: chartreuse;
+                margin: 20px;
+                transition: transform 0.5s;
+            }
+            .box1:hover{
+                transform-origin: center;
+                transform: rotate(45deg);
+            }
+            .box2:hover{
+                transform-origin: top left;
+                transform: rotate(45deg);
+            }
+            .box3:hover{
+                transform-origin: bottom right;
+                transform: rotate(45deg);
+            }
+            .box4:hover{
+                transform-origin: left center;
+                transform: scale(1.5);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </body>
+</html>
