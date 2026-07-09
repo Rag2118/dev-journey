@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background: blue;
+
+                animation-name: moveRight;
+                animation-duration: 2s;
+                animation-delay: 4s;
+            }
+            @keyframes moveRight{
+                from{
+                    transform: translateX(0);
+                }
+                to{
+                    transform: translateX(250px);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
