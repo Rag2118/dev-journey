@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                height: 100vh;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                background: saddlebrown;
+                animation: move 4s ease-in-out 2s infinite alternate forwards running;
+            }
+            @keyframes move{
+                from{
+                    transform: translateX(0) scale(1);
+                    background: saddlebrown;
+                }
+                to{
+                    transform: translateX(300px) scale(1.5);
+                    background: seagreen;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
