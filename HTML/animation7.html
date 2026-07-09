@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background: red;
+                margin: 20px;
+
+                animation: move;
+                animation-duration: 3s;
+                animation-delay: 2s;
+                animation-timing-function: linear;
+            }
+            .box1{
+                animation-fill-mode: none;
+            }
+            .box2{
+                animation-fill-mode: forwards;
+            }
+            .box3{
+                animation-fill-mode: backwards;
+            }
+            .box4{
+                animation-fill-mode: both;
+            }
+            @keyframes move{
+                from{
+                    transform: translateX(100px);
+                    background: red;
+                }
+                to{
+                    transform: translateX(250px);
+                    background: blue;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    
+    </body>
+</html>
