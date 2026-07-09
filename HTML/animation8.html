@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background: maroon;
+
+                animation-name: moveRight;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes moveRight{
+                from{
+                    transform: translateX();
+                }
+                to{
+                    transform: translateX(300px);
+                }
+            }
+            .box:hover{
+                animation-play-state: paused;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
