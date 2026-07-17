@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+    <body>
+        <h1 id="title">Student Profile</h1>
+
+        <p id="name">Name: Unknown</p>
+
+        <div id="details"></div>
+
+        <input type="text" id="course" value="Full Stack Development">
+
+        <script>
+            const title=document.getElementById("title");
+            title.textContent="Student Dashboard";
+
+            const name=document.getElementById("name");
+            name.innerText="Name:Raghul";
+
+            const course=document.getElementById("course");
+            console.log(course.value);
+
+            const details=document.getElementById("details");
+            details.innerHTML=`
+            <h3>Profile Updated</h3>
+            <p>Course: ${course.value}</p>`;
+        </script>
+    </body>
+</html>
