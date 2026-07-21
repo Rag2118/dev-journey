@@ -1,0 +1,12 @@
+const p=document.createElement("p");
+p.textContent="This is my first paragraph";
+const container=document.getElementById("container");
+container.append(p);
+const h3=document.createElement("h3");
+h3.textContent="DOM Practice";
+container.prepend(h3);
+const h2=document.querySelector("h2");
+h2.remove();
+const btn=document.createElement("button");
+btn.textContent="Submit";
+container.append(btn);
