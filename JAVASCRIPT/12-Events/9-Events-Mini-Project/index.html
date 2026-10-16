@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Shopping Cart</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main class="container">
+            <section  class="products-section">
+                <h2>Products</h2>
+
+                <div class="products-container">
+
+                    <div class="product-card">
+                        <img class="product-image" src="./images/laptop PNG for 3D editing.jpg" alt="Laptop">
+                        <h3 class="product-name">Laptop</h3>
+                        <p class="product-price">Price: ₹50000</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-image" src="./images/download (4).jpg" alt="Headphones">
+                        <h3 class="product-name">Headphones</h3>
+                        <p class="product-price">Price: ₹2000</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="product-image" src="./images/download (5).jpg" alt="Keyboard">
+                        <h3 class="product-name">Keyboard</h3>
+                        <p class="product-price">Price: ₹1500</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cart-section">
+                <h2>Shopping Cart</h2>
+                <p>Cart Count: <span id="cart-count">0</span></p>
+
+                <div id="cart-items">
+
+                </div>
+                <p>Total: $<span id="total-price">0</span></p>
+                <button id="clear-cart">Clear Cart</button>
+            </section>
+        </main>
+    </body>
+
+    <script src="script.js"></script>
+</html>
