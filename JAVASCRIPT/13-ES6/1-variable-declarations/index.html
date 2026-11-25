@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ES6-Variable-Declarations</title> 
+    </head>
+
+    <body>
+        <h1>Variable-Declarations</h1>
+        <script>
+            const companyName="Oeko Tech";
+            let empName="Raghul";
+            let salary=50000;
+            salary=75000;
+            console.log("Company: ",companyName);
+            console.log("Employee: ",empName);
+            console.log("Updated Salary: ",salary);
+            //let salary=75000; //Error:Cannot redeclare
+            if(true){
+                var a=10;
+                let b=20;
+                const c=30;
+                console.log(a);
+                console.log(b);
+                console.log(c);
+            };
+            console.log(a);
+            try{
+                console.log(b);
+            }catch(error){
+                console.log("Reference Error");
+            }
+            try{
+                console.log(c);
+            }catch(error){
+                console.log("Reference Error");
+            }
+            function empDetails(){
+                var employeeName="sanjay";
+                let employeeSalary=20000;
+                const employeeAge=21;
+                console.log(employeeName);
+                console.log(employeeAge);
+                console.log(employeeSalary);
+            };
+            empDetails();
+            try{
+                console.log(employeeName);
+            }catch(error){
+                console.log("Reference Error");
+            }
+            try{
+                console.log(employeeSalary);
+            }catch(error){
+                console.log("Reference Error");
+            }
+            try{
+                console.log(employeeAge);
+            }catch(error){
+                console.log("Reference Error");
+            }
+            //
+            console.log(age);
+            var age;
+            age=21;
+            //
+            try{
+                console.log(city);
+            }catch(error){
+                console.log("Reference Error Occured");
+            }
+            let city="chennai";
+            console.log(city);
+        </script>
+    </body>
+</html>
