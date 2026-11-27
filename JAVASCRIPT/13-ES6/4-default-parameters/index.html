@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ES6-default-parameters</title>
+    </head>
+
+    <body>
+        <h1>Default Parameters</h1>
+        <script>
+            function calculateBill(price, quantity=1, discount=0){
+                let total=price*quantity;
+                let finalAmt=total-(total * discount/100);
+                console.log("Total With Discount =  "+finalAmt);
+            }
+            calculateBill(500);
+            calculateBill(500,2);
+            calculateBill(500,2,10);
+        </script>
+    </body>
+</html>
