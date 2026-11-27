@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ES6-arrow-function</title>
+    </head>
+
+    <body>
+        <h1>Arrow Function</h1>
+        <script>
+            //funct 1
+            const calculateTotal=(price,quantity)=>{
+                return price*quantity;
+            }
+            console.log("Product Total = ",calculateTotal(20,5));
+            //funct 2
+            const isEven=(num)=> num % 2 ===0;
+            console.log(isEven(11));
+            //funct 3
+            const greetUser=(name)=>{
+                console.log("Welcome "+ name+"!");
+            }
+            greetUser("Rag");
+        </script>
+    </body>
+</html> 
